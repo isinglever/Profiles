@@ -175,7 +175,6 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrit
 #
 # 可选字段 tls13 仅用于：shadowsocks obfs=wss / vmess obfs=over-tls and obfs=wss / http over-tls=true / trojan over-tls=true
 # [server_local] 完整示例请查看「示例」
-shadowocks=173.82.88.93:443, method=aes-256-gcm, password=19981020, fast-open=false, udp-relay=false, tag=CloudCone
 
 [filter_local]
 # Local Area Network 局域网
