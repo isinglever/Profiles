@@ -33,10 +33,10 @@ function format_apps(x) {
           apps_f[n_n[1]].push(n_n[0]);
         }
       } else {
-        notifys.push(`ID格式错误:【${n}】`);
+        notifys.push(`ID format error:【${n}】`);
       }
     } else {
-      notifys.push(`ID格式错误:【${n}】`);
+      notifys.push(`ID format error:【${n}】`);
     }
   });
   if (Object.keys(apps_f).length > 0) {
@@ -76,21 +76,21 @@ async function post_data(d) {
                   ) {
                     if (x.version !== app_monitor[x.trackId].v) {
                       notifys.push(
-                        `${flag(k)}🧩${x.trackName}:Updated【${x.version}】`
+                        `${flag(k)} ${x.trackName}:Updated【${x.version}】`
                       );
                     }
                     if (x.formattedPrice !== app_monitor[x.trackId].p) {
                       notifys.push(
-                        `${flag(k)}💰${x.trackName}:Price【${x.formattedPrice}】`
+                        `${flag(k)} ${x.trackName}:Price【${x.formattedPrice}】`
                       );
                     }
                   }
                 } else {
                   notifys.push(
-                    `${flag(k)}🧩${x.trackName}:Version【${x.version}】`
+                    `${flag(k)} ${x.trackName}:Version【${x.version}】`
                   );
                   notifys.push(
-                    `${flag(k)}💰${x.trackName}:Price【${x.formattedPrice}】`
+                    `${flag(k)} ${x.trackName}:Price【${x.formattedPrice}】`
                   );
                 }
               });
